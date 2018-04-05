@@ -31,6 +31,9 @@
 
         <!-- TODO (3); Register the RemoteViewsService in the Manifest -->
 
+        <service android:name=".GridWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
         <provider
             android:name=".provider.PlantContentProvider"
             android:authorities="com.example.android.mygarden"
